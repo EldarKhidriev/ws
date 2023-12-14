@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drive&Machine LEASENG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/normolize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.svg" alt="" class="logo__img">
+                    </a>
+                    <nav class="menu">
+                        <ui class="menu__list">
+                            <li class="menu__list-item">
+                                <a href="index.html" class="menu__list-link">ГЛАВНАЯ</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="new-cars.html" class="menu__list-link">АРЕНДА или ПОКУПКА</a>
+                            </li>
+                            <li class="menu__list-item">
+                                <a href="contacts.html" class="menu__list-link">Регистрация и вход</a>
+                            </li>
+                        </ui>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        
+        
+        
+            <main class="main">
+            <section class="signup">
+                <div class="container">
+                    <h2 class="section-title signup__title">Зарегистрироваться или войти</h2>
+                    <form action="#" class="form">
+                        <ul class="signup__list">
+                            <li class="signup__item"><input type="text" class="form__input" placeholder="Имя"></li>
+                            <li class="signup__item"><input type="email" class="form__input" placeholder="Электронная почта"></li>
+                            <li class="signup__item"><input type="password" class="form__input pass" placeholder="Пароль"></li>
+                            <li class="signup__item"><input type="password" class="form__input pass" placeholder="Подтверждение пароля"></li>
+                            <li class="signup__item"><button class="form__btn reg" type="button">Зарегистрироваться или войти</button></li>
+                        </ul>
+                    </form>
+                </div>
+            </section>
+        </main>
+        
+        
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer__menu">
+                    
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-list-item"><a href="https://vk.com/mirty_catton" class="footer__menu-list-link">made by @mirty_www</a></li>
+                    </ul>
+                    
+                    <ul class="footer__menu-list-2">
+                        <li class="footer__menu-list-item">+7 (903) 480-89-42</li>
+                        <li class="footer__menu-list-item"><a href="#" class="footer__menu-list-link">1mirty1@mail.ru</a></li>
+                    </ul>
+                    
+                    <a href="#" class="logo"><img src="images/logo.svg" alt="" class="logo__img"></a>
+                </nav>
+                
+                <ul class="apps">
+                    <li class="apps__item"><a href="#" class="apps_img"><img src="images/appstore.svg" alt=""></a></li>
+                    <li class="apps__item"><a href="#" class="apps_img"><img src="images/pmarket.svg" alt=""></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script >
+        var pass1 = document.querySelectorAll('.form__input.pass')[0]
+        var pass2 = document.querySelectorAll('.form__input.pass')[1]
+        var btnReg = document.querySelector('.form__btn.reg');
+        console.log(btnReg)
+btnReg.addEventListener('click', ()=>{
+ 
+  if(pass1.value != pass2.value) alert('Пароли не совпадают!');
+  else window.location.href='/index.html'
+})
+    </script>
+
+</body>
+</html>
